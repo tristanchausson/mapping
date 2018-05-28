@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport">
+	<link
+		rel="stylesheet"
+		type="text/css"
+		href="style.css"
+	/>
+	<link
+		rel="stylesheet"
+		href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css"
+		integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB"
+		crossorigin="anonymous"
+	/>
+	<link
+		rel="stylesheet"
+		href="https://unpkg.com/leaflet@1.3.1/dist/leaflet.css"
+		integrity="sha512-Rksm5RenBEKSKFjgI3a41vrjkw4EVPlJ3+OiI65vTjIdo9brlAacEuKOiQ5OFh7cOI1bkDwLqdLw3Zg0cRJAAQ=="
+		crossorigin=""
+	/>
+
+	<title>Cahors Map</title>
+</head>
+<body>
+<!-- 	<div id="menu" class="menuMap">
+		<h2>Ville de Cahors</h2><br/>
+		<span class="description">Nom : </span>
+		<input type="text" name="nom"><br/>
+		<span class="description">Catégorie Parente : </span>
+		<select></select><br/>
+		<span>Logo : </span>
+		<input type="file" name="monFichier" id="myFile"><br/>
+		<span class="description">Couleur : </span>
+		<input type="color" name="textcolor"><br/>
+		<button>Enregistrer</button>
+	</div> -->
+
+	<div class="accordion" id="accordionExample">
+	  <div class="card" id="menu">
+<!-- 	    <div class="card-header" id="headingOne">
+	      <h5 class="mb-0">
+	        <button id="menu" class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+	          
+	        </button>
+	      </h5>
+	    </div>
+	    <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordionExample">
+	      <button id="sousCat" class="btn btn-link" type="button" data-toggle="" data-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+	        
+	      </button>
+	    </div> -->
+	  </div>
+	</div>
+
+    <div id="mapid" class="map"></div>
+
+
+
+	<script
+		src="https://code.jquery.com/jquery-3.3.1.min.js"
+		integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+		crossorigin="anonymous">
+	</script>
+	<script
+		src="https://unpkg.com/leaflet@1.3.1/dist/leaflet.js"
+		integrity="sha512-/Nsx9X4HebavoBvEBuyp3I7od5tA0UzAxs+j83KgC8PU0kgB4XiK4Lfe4y4cgBtaRJQEIFCW+oC506aPT2L1zw=="
+		crossorigin="">
+	</script>
+	<script
+		src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+		integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+		crossorigin="anonymous">
+	</script>
+	<script
+		src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"
+		integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T"
+		crossorigin="anonymous">
+	</script>
+	<script
+		type="text/javascript"
+		src="app.js">
+	</script>
+	<script
+		type="text/javascript"
+		src="places.json">
+	</script>
+</body>
+</html>
